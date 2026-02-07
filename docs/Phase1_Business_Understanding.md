@@ -67,6 +67,8 @@ Not Expected
 Rare
 3.Could traffic spike unexpectedly?
 Very limited; occasional spikes may occur for 1–2 months, with 30–40 daily users and rare days reaching up to 100 users
+git config --global --unset credential.helper
+git config --system --unset credential.helper
 
 H. Implications:
 Traffic is predictable and low which means single-server monolith is sufficient and modular design is still recommended to allow future scaling, microservice extraction, or expansion.
